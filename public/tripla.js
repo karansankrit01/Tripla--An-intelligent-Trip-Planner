@@ -149,7 +149,7 @@ async function sendMessage() {
   showTyping();
 
   try {
-    // ── FIXED: Goes to your proxy, not Anthropic directly ──
+    // ── FIXED: Goes through your proxy for security ──
     const response = await fetch(PROXY_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -159,7 +159,7 @@ async function sendMessage() {
       })
     });
 
-    // ── FIXED: Handle HTTP-level errors (401, 500, etc.) ──
+    // ── FIXED: Handle errors (401, 500, etc.) ──
     if (!response.ok) {
       const errData = await response.json().catch(() => ({}));
       throw new Error(errData.error || `Server error ${response.status}`);
@@ -168,10 +168,8 @@ async function sendMessage() {
     const data = await response.json();
     hideTyping();
 
-    const reply =
-      data.content?.map(b => b.text || '').join('') ||
-      data.reply || // fallback if proxy wraps response
-      'Sorry, I got an empty response. Please try again!';
+    const reply = data.reply || 'Sorry, I got an empty response. Please try again!';
+
 
     conversationHistory.push({ role: 'assistant', content: reply });
     appendMessage('bot', reply);
