@@ -15,8 +15,8 @@ const app = express();
 // Parse JSON bodies (just like Vercel automatically does)
 app.use(express.json());
 
-// Serve the frontend static files (HTML, CSS, JS) from the root directory
-app.use(express.static(__dirname));
+// Serve the frontend static files (HTML, CSS, JS) from the public directory
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Route the specific API call to the Vercel-style handler inside /api/
 app.post('/api/chat', async (req, res) => {
@@ -30,7 +30,7 @@ app.post('/api/chat', async (req, res) => {
 
 // Any other GET request serves the main HTML file
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'tripla.html'));
+  res.sendFile(path.join(__dirname, 'public', 'tripla.html'));
 });
 
 const PORT = 3000;
