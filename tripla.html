@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tripla — Your AI Travel Planner</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tripla.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">Tripla</a>
+  <ul class="nav-links">
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#features">Features</a></li>
+    <!-- <li><a href="#demo">See It Live</a></li> -->
+    <li><a href="#demo" class="nav-cta">Plan a Trip →</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="dot-live"></span>
+        AI-Powered · Budget-First · India Travel
+      </div>
+      <h1 class="hero-title">
+        Travel smarter.<br>
+        Spend <em>less.</em><br>
+        See everything.
+      </h1>
+      <p class="hero-sub">
+        Tripla crunches the real numbers — transport, stays, food, and activities — 
+        and builds you an itinerary that actually fits your budget. No fluff. No fantasy.
+      </p>
+      <div class="hero-actions">
+        <a href="#demo" class="btn-primary">
+          Plan My Trip ✦
+        </a>
+        <a href="#how" class="btn-ghost">
+          See how it works →
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">₹0</div>
+          <div class="stat-label">Hidden Costs</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">Available</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Destinations</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-mascot">
+      <div class="mascot-card">
+        <img src="assets/tripla-mascot.png" alt="Tripla mascot" class="mascot-img">
+        <div class="mascot-bubble">
+          Tell me where you want to go and your budget — I'll handle the math, you handle the memories.
+          <div class="bubble-author">— Tripla, your travel brain 🧠</div>
+        </div>
+        <div class="typing">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how">
+  <div class="section-label">The Process</div>
+  <h2 class="section-title">From budget to <em>bags packed</em> in minutes</h2>
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-num">01</div>
+      <div class="step-icon">📍</div>
+      <div class="step-title">Tell Tripla your plan</div>
+      <p class="step-desc">Share your origin, destination, budget, travel dates, and party size. The more you share, the sharper the plan.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">02</div>
+      <div class="step-icon">🧮</div>
+      <div class="step-title">The math happens first</div>
+      <p class="step-desc">Transport costs are deducted before anything else. You'll see your exact on-ground budget and daily allowance upfront.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">03</div>
+      <div class="step-icon">🗺️</div>
+      <div class="step-title">Get a real itinerary</div>
+      <p class="step-desc">Day-by-day plans with itemized costs, a running spend tracker, and budget tips tuned to your destination.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section" id="features">
+  <div class="features-inner">
+    <div class="section-label">What Makes Tripla Different</div>
+    <h2 class="section-title">Built for the <em>real</em> traveller</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🔴</div>
+        <div class="feature-title">Budget Tier Reality Check</div>
+        <p class="feature-desc">Tripla classifies your budget as Comfortable, Tight, or Extreme — and adjusts every recommendation accordingly. No pretending hostels are "cozy boutique stays."</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📅</div>
+        <div class="feature-title">Seasonal Price Awareness</div>
+        <p class="feature-desc">Traveling during Diwali? Peak Goa season? Tripla flags surcharges, festival crowd warnings, and best-time-to-visit tips so you're never blindsided.</p>
+      </div>
+      <div class="feature-card wide">
+        <div>
+          <div class="feature-icon">🧮</div>
+          <div class="feature-title">Live Budget Math, Shown to You</div>
+          <p class="feature-desc">Every itinerary shows the full calculation — total budget, transport deduction, on-ground budget, and daily allowance — so you see exactly how the numbers work before you commit to anything.</p>
+        </div>
+        <div class="budget-mock">
+          <div class="budget-row">
+            <span class="label">Total Budget</span>
+            <span class="value">₹25,000</span>
+          </div>
+          <div class="budget-row">
+            <span class="label">Train (Delhi → Jaipur, return)</span>
+            <span class="value" style="color:#f87171">− ₹2,400</span>
+          </div>
+          <div class="budget-row">
+            <span class="label">On-Ground Budget</span>
+            <span class="value purple">₹22,600</span>
+          </div>
+          <div class="budget-row">
+            <span class="label">Duration</span>
+            <span class="value">4 Days</span>
+          </div>
+          <div class="budget-row">
+            <span class="label">Daily Budget / person</span>
+            <span class="value green">₹5,650 / day</span>
+          </div>
+          <div class="budget-bar-wrap">
+            <div class="budget-bar"></div>
+          </div>
+          <div style="font-size:0.75rem; color:var(--muted); margin-top:8px;">
+            🟢 Comfortable Tier — mid-range stays & sit-down meals possible
+          </div>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">👥</div>
+        <div class="feature-title">Party Size Smart</div>
+        <p class="feature-desc">Solo, couple, or group? Tripla splits room costs per person and adjusts recommendations so you're comparing apples to apples.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💡</div>
+        <div class="feature-title">Destination-Specific Tips</div>
+        <p class="feature-desc">Not generic "eat local" advice — actual, specific money-saving strategies for your chosen destination that Tripla has learned from real travel patterns.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEMO -->
+<section class="demo-section" id="demo">
+  <div class="section-label">Try It Now</div>
+  <h2 class="section-title">Ask Tripla anything about your <em>next trip</em></h2>
+  <div class="chat-window">
+    <div class="chat-header">
+      <div class="chat-avatar">🧳</div>
+      <div>
+        <div class="chat-name">Tripla</div>
+        <div class="chat-status"><span class="dot-live"></span> Online</div>
+      </div>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="msg bot" style="animation-delay:0.1s">
+        <div class="msg-bubble">
+          Hey! 👋 I'm Tripla. Tell me where you want to go, your budget, how many days, and when you're traveling — I'll build you a plan that actually makes financial sense. No fantasy numbers.
+        </div>
+        <div class="msg-meta">Tripla · just now</div>
+      </div>
+      <div class="msg user" style="animation-delay:0.3s">
+        <div class="msg-bubble">
+          I want to go from Delhi to Jaipur, budget ₹15,000, for 3 days in March. Just me.
+        </div>
+        <div class="msg-meta">You · just now</div>
+      </div>
+      <div class="msg bot" style="animation-delay:0.6s">
+        <div class="msg-bubble">
+          Perfect! Let me crunch those numbers 🧮<br><br>
+          <strong>The Math:</strong><br>
+          Train (Delhi → Jaipur return): <span class="highlight-chip">− ₹1,200</span><br>
+          On-Ground Budget: <span class="highlight-chip">₹13,800</span><br>
+          Daily Budget: <span class="highlight-chip">₹4,600 / day</span><br><br>
+          You're in the 🟡 <strong>Tight</strong> tier — totally doable, but we're going budget guesthouse + local food. Here's your 3-day plan…
+        </div>
+        <div class="msg-meta">Tripla · just now</div>
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <input class="chat-input" type="text" id="chatInput" placeholder="e.g. Mumbai to Goa, ₹20,000, 4 days, couple, next month…">
+      <button class="chat-send" onclick="sendMessage()" title="Send">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="testimonials-inner">
+    <div class="section-label">Real Trips, Real Budgets</div>
+    <h2 class="section-title">What travellers are <em>saying</em></h2>
+    <div class="testimonials-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Tripla told me my Goa budget was extreme before I wasted money booking. Rescheduled to off-season, saved ₹8,000 on the same trip.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">A</div>
+          <div>
+            <div class="testi-name">Aryan S.</div>
+            <div class="testi-trip">Delhi → Goa · ₹18,000</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">The running daily spend tracker is genius. I knew exactly where I stood every single day. Never went over budget once in 5 days in Rajasthan.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">P</div>
+          <div>
+            <div class="testi-name">Priya M.</div>
+            <div class="testi-trip">Jaipur + Jodhpur · ₹22,000</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★☆</div>
+        <p class="testi-text">Finally an AI that doesn't suggest 5-star hotels when I say ₹1,500/day. Tripla found me a clean hostel near Hampi rocks for ₹450. Real talk.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">R</div>
+          <div>
+            <div class="testi-name">Rohan K.</div>
+            <div class="testi-trip">Bangalore → Hampi · ₹6,000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-glow"></div>
+  <h2>Your next trip is <em>one prompt</em> away.</h2>
+  <p class="cta-sub">No spreadsheets. No guesswork. Just honest numbers and a solid plan.</p>
+  <a href="#demo" class="btn-primary">Start Planning with Tripla ✦</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Tripla</div>
+  <div class="footer-copy">© 2025 Tripla. Built for real budgets.</div>
+  <div class="footer-links">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#">Contact</a>
+  </div>
+</footer>
+
+<script src="tripla.js"></script>
+</body>
+</html>
